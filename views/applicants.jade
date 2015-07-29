@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	.container
+		h1 Applicants
+		ul
+			for applicant in applicants
+				li
+					h6 #{applicant.name}
+					h6 #{applicant.bio}
+					h6 #{applicant.skills}
+					h6 #{applicant.years}
+					h6 #{applicant.why}
