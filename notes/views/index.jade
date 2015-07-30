@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1 Heroes of ajax
+
+	a#get-heroes(href="javascript:void(0);") get heroes!
+
+	h3 create a hero
+
+	form#hero-create
+		input(name="name", placeholder="hero name")
+		input(name="superPowers", placeholder="powers")
+		input(name="cape", type="checkbox")
+		input(type="submit")
